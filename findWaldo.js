@@ -9,7 +9,7 @@ const findWaldo = function(names, found) {
 
 const actionWhenFound = function(name, i) {
   if (name === "Waldo") {
-    console.log(`\"Found ${name} at index ${i}!\".`);
+    console.log(`Found ${name} at index ${i}!.`);
   }
 };
 
