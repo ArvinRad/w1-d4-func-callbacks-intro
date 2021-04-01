@@ -1,10 +1,8 @@
 // The second argument/parameter is expected to be a (callback) function
 const findWaldo = function(names, found) {
-  let i = 0;
-  names.forEach(element => {
-    found(element, i);
-    i++;
-  });
+  for (let i = 0; i < names.length; i++) {
+    found(names[i], i);
+  };
 };
 
 const actionWhenFound = function(name, i) {
